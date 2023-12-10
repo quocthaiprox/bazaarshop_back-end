@@ -7,7 +7,7 @@ class BlogController {
     const query = req.query;
 
     let page = (query._page && Number(query._page)) || 1;
-    let limit = (query._limit && Number(query._limit)) || 6;
+    let limit = (query._limit && Number(query._limit)) || 9;
     let sort = query._sort;
     let order = query._order; // asc, desc
 

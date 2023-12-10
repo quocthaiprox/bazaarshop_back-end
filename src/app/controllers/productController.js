@@ -20,10 +20,10 @@ class ProductController {
 
     // get all query
     let page = (query._page && Number(query._page)) || 1;
-    let limit = (query._limit && Number(query._limit)) || 8;
+    let limit = (query._limit && Number(query._limit)) || 12;
     let sort = query._sort;
     let order = query._order; // asc, desc
-    let category = query._category; // watch, ring
+    let category = query.x; // watch, ring
     let field = query._field;
     let oparater = {};
     oparater.$eq = query._eq; // ==
