@@ -41,6 +41,11 @@ const OrderSchema = new Schema(
       enum: ["pending", "processing", "processed"],
       default: "pending",
     },
+    payment: {
+      type: String,
+      enum: ["cash", "credit_card", "vnpay"],
+      default: "cash",
+    },
     orderNote: {
       type: String,
     },
