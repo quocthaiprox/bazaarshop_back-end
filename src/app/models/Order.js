@@ -38,8 +38,8 @@ const OrderSchema = new Schema(
     },
     statusOrder: {
       type: String,
-      enum: ["pending", "processing", "processed"],
-      default: "pending",
+      enum: ["processing", "shipping", "shipped", "success", "failed"],
+      default: "processing",
     },
     payment: {
       type: String,
